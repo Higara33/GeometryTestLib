@@ -36,10 +36,9 @@ namespace GeometryTestLib.Figures
 
         public bool CheckRightAngle()
         {
-            if((side2*side2 + side3*side3) == side1*side1 || (side1*side1 + side3*side3) == side2*side2 || (side1*side1 + side2*side2) == side3*side3)
-                return true;
-            else
-                return false;
+            return ((side2 * side2 + side3 * side3) == side1 * side1 || 
+                    (side1 * side1 + side3 * side3) == side2 * side2 || 
+                    (side1 * side1 + side2 * side2) == side3 * side3);     
         }
     }
 }
